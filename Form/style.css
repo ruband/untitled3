@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    display: flex;
+}
+h3 {
+    margin-left:  20px;
+}
+.input-group {
+    display: flex;
+    margin-right: 100px;
+}
+.input-group:first-child {
+    padding-top: 70px;
+}
+.input-group input {
+    order: 1;
+    flex-grow: 1;
+}
+input:required + label::after{
+    content: "*";
+    color: red;
+}
+input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 10px;
+}
+input:focus {
+    outline: none;
+    border-color: cornflowerblue;
+}
+#firstName + label {
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+#lastName + label{
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+#surname +label {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    margin-left: 35px;
+}
+#birthDay + label {
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+.input-group1 {
+    padding-right: 100px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#email + label {
+    margin-bottom: 10px;
+    margin-left: 35px;
+    padding-left: 30px;
+}
+#phoneNumber + label {
+    margin-bottom: 10px;
+
+}
+#Address + label {
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+#listCountryInput + label {
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+.option-group{
+    display: flex;
+}
+.option-group select {
+     border-left: 0;
+     border-top: 0;
+     border-right: 0;
+     flex-grow: 1;
+     margin-right: 100px;
+}
+select:focus {
+    outline: none;
+    border-color: cornflowerblue;
+}
+.option-group > label{
+    margin-left: 65px;
+    padding-bottom: 10px;
+}
+#acceptInput {
+    order: 0;
+}
+a {
+    padding-left: 4px;
+}
+input:last-child {
+    background-color: white ;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+    font-weight: bold;
+    padding: 10px 20px 10px;
+    margin: 20px 50px 20px 300px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        text-align: left ;
+        margin: 0;
+        padding: 0;
+    }
+
+    input, .option-group select {
+        border: 2px solid gainsboro;
+        min-height: 30px;
+        margin-bottom: 20px;
+    }
+    .input-group {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .input-group:first-child {
+        padding: 0;
+    }
+    .input-group:last-child {
+        margin-left: 0;
+    }
+    #firstName + label {
+        margin-left: 0;
+    }
+    #lastName + label {
+        margin-left: 0;
+
+    }
+    #surname + label {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    #birthDay + label {
+        margin-left: 0;
+    }
+    #email + label {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .input-group1 {
+        padding-right: 10px;
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+    .option-group {
+        flex-direction: column;
+    }
+    .option-group > label {
+        margin-left: 20px;
+    }
+    .option-group select {
+        margin-right: 10px;
+        margin-left: 20px;
+        min-height: 40px;
+    }
+    #Address + label {
+        margin-left: 0;
+    }
+    input:last-child {
+        min-width: 100%;
+        margin-left: 20px;
+    }
+}
